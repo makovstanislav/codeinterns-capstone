@@ -1,0 +1,376 @@
+.main {
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-rendering: optimizelegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 0;
+  background-color: #003a9b;
+  z-index: 1;
+}
+
+.logo {
+  fill: #003a9b;
+  background-color: #003a9b;
+  margin-left: 25rem;  
+}
+
+.signIn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  width: 75px;
+  height: 36px;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all .25s ease;
+  margin-right: 23rem;
+}
+
+.bgImg {
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  z-index: 0;
+  opacity: 60%;
+}
+
+.bgImgSecond {
+  position: absolute;
+  bottom: -3570px;
+  right: -400px;
+  z-index: 0;
+  opacity: 60%;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro h1 {
+  margin-top: 7.5rem;
+  font-size: 3rem;
+  color: #003a9b;
+  text-align: center;
+  -webkit-font-smoothing: antialiased;
+  line-height: 56px;
+  z-index: 1;
+}
+
+.intro h3 {
+  margin-top: 1.5rem;
+  color: #595959;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 32px;
+  margin-bottom: 32px;
+  -webkit-font-smoothing: antialiased;
+  height: 32px;
+  margin-bottom: 2rem;
+  z-index: 1;
+
+}
+
+.introBtns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5rem;
+  margin-top: 3rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 1.1875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  padding: 8px 24px;
+  margin: 0 6px;
+  transition: all .25s ease;
+  z-index: 1;
+}
+
+.btnHire {
+  background-color: white;
+  color: #323333;
+}
+
+.btnHire:hover {
+  background-color: hsl(230, 35%, 87%);
+}
+
+.btnFind {
+  color: white;
+  border: 1px solid #7c64b4;
+  background-color: #2557a6;
+}
+
+.btnFind:hover {
+  border-color: #6246A4;
+  background-color: #174081;
+}
+
+.candidatesImg {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  background-size: cover;
+  border: 1px solid #eeeeee;
+  z-index: 1;
+}
+
+.candidatesImgMob {
+  display: none;
+}
+
+.companiesSection {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  width: 100%;
+  color: rgb(51, 51, 51);
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 24px;
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+}
+
+.companiesSectionTitle {
+  color: #777;
+  font-size: 11px;
+  font-weight: 500;
+  letter-spacing: 3.3px;
+  line-height: 18px;
+  margin-bottom: 24px;
+}
+
+.employmentCards {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.employment {
+  height: 176px;
+  width: 194px;
+  padding-bottom: 24px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.employment img {
+  margin-bottom: 11px;
+  border-radius: 100%;
+}
+
+.role {
+  font-weight: 600;
+}
+
+.ciFor {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  color: #333333;
+  width: 100%;
+  padding-top: 80px;
+  align-items: center;
+  font-family: Helvetica Neue,Helvetica,sans-serif;
+  border-top: 1px solid #eeeeee;
+}
+
+.ciForSubtitle{
+  color: #432092;
+  margin-bottom: 24px;
+  font-size: 21px;
+  font-weight: 600;
+}
+
+.ciForTitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 48px;
+  font-weight: 600;
+  margin-bottom: 24px;
+}
+
+.ciForImg {
+  margin-top: 64px;
+}
+
+.ciForImgMob {
+  display: none;
+  width: 92.4vw;
+  height: 61.8vh;
+  border-radius: 16px;
+}
+
+.benefits {
+  display: flex;
+  list-style-type: none;
+  margin-top: 30px;
+  margin-right: 62.5px;
+  margin-left: 62.5px;
+  max-width: 1000px;
+  justify-content: space-between;
+  padding: 0 15px;
+}
+
+.benefitsItem {
+  flex-basis: 290px;
+  margin-bottom: 80px;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.benefits img {
+  margin-bottom: 16px;
+}
+
+.benefitsItemTitle {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+.benefitsItemDescr {
+  line-height: 24px;
+  color: rgb(51 51 51 / 80%);
+}
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+
+  .header {
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .plant {
+    display: none;
+  }
+
+  .intro {
+    box-sizing: border-box;
+    width: 100%;
+    align-items: center;
+  }
+  
+  .intro h1 {
+    margin-top: 5rem;
+    font-size: 29px;
+    line-height: 32px;
+  }
+
+  .intro h3 {
+    margin-bottom: 4rem;
+  }
+
+  .candidatesImg {
+    display: none;
+  }
+
+  .candidatesImgMob {
+    display: block;
+    width: 90vw;
+    height: 70vh;
+  }
+
+  .companiesSection {
+    padding: 40px 15px 32px 15px;
+    justify-content: baseline;
+    text-align: start;
+  }
+
+  .employmentCards {
+    flex-direction: column;
+  }
+
+  .employment {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    margin-bottom: 16px;
+  }
+
+  .employment img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    border-radius: 50%;
+    border: 1px solid #eeeeee;
+  }
+
+  .employment p {
+    display: block;
+  }
+
+  .employer {
+    margin-left: 15px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .role {
+    margin-left: 5px;
+  }
+
+  .ciForTitle {
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  .ciForImg {
+    display: none;
+  }
+
+  .ciForImgMob {
+    display: block;
+  }
+
+  .benefits {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .benefitsItem {
+    margin-bottom: 2rem;
+    flex-basis: auto;
+    padding-bottom: 0;
+  }
+
+  .benefitsItem:last-child {
+    margin-bottom: 4rem;
+  }
+
+  .benefitsItem img {
+    margin-bottom: 8px;
+  }
+
+}
+
+

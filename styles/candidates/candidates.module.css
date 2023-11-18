@@ -1,0 +1,80 @@
+.main {
+    margin-top: 3.4rem;
+    padding: 0 332px;
+    border: 1px solid rgb(255, 0, 132)(0, 34, 255);
+}
+
+.titleSection {
+    display: flex;
+}
+
+.titleSection h1 {
+    margin-bottom: 16px;
+}
+
+.pageTitle, .candidatesQty {
+    color: #222;
+    font-family: -apple-system,BlinkMacSystemFont,Inter,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.candidatesQty {
+    color: #757575;
+    margin-left: 0.5rem;
+}
+
+.tabsSection {
+    display: flex;
+    border-bottom: 1px solid #dddddd;
+    margin-bottom: 1.5em;
+}
+
+.tab,
+.tabActive { 
+    margin-right: 1em;
+    font-size: 1rem;
+    font-family: -apple-system,BlinkMacSystemFont,Inter,Roboto,Helvetica Neue,Arial,Noto Sans,Liberation Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+    font-weight: 600;
+    line-height: 1.5rem;
+    color: #757575;
+    padding: 8px 0;
+}
+
+.tabActive {
+    border-bottom: 2px solid red;
+}
+
+.mainSection {
+    display: flex;
+}
+
+.searchAndFeed {
+    width: 756px;
+}
+
+.searchBar {
+    /* styling goes here */
+    width: 756px;
+    height: 74px;
+    border: 1px solid black;
+}
+
+/* Mobile */
+@media only screen and (max-width: 700px) {
+    .main {
+        margin-top: 1.5rem;
+        padding: 0 0.75rem;
+        min-height: 1000px;
+    }
+
+    .searchBar,
+    .searchAndFeed {
+        width: 100%;
+    }
+
+    .feed {
+        width: 100%;
+    }
+}

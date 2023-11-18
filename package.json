@@ -1,0 +1,27 @@
+{
+  "name": "codeinterns",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@opentelemetry/api": "1.4.1",
+    "encoding": "^0.1.13",
+    "eslint": "8.43.0",
+    "eslint-config-next": "^14.0.1",
+    "fibers": "5.0.3",
+    "firebase": "^9.23.0",
+    "firebase-admin": "^11.9.0",
+    "next": "^14.0.1",
+    "picocolors": "^1.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-firebase-hooks": "^5.1.1",
+    "sass": "1.63.6",
+    "typescript": "5.1.3"
+  }
+}

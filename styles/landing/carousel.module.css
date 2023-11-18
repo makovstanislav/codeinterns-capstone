@@ -1,0 +1,216 @@
+.sliderContainer {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 15px;
+    width: 100vw;
+    height: 53vh;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-family: "Helvetica Neue", Helvetica, sans-serif;
+  }
+
+  .sliderTitle {
+    color: rgb(51, 51, 51);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    margin-top: 10px;
+  }
+
+  .slider {
+    width: 100%;
+    max-width: 940px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .slides {
+    display: flex;
+    overflow-x: scroll;
+    position: relative;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+  }
+  
+  /* webkit browsers like Safari, Chrome */
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    height: 27vh;
+    margin-right: 0px;
+    box-sizing: border-box;
+    background: white;
+    transform-origin: center center;
+    transform: scale(1);
+    scroll-snap-align: center;
+  }
+  
+  .slide__feedback__wrapper {
+    display: flex;
+    flex-direction: column;
+    box-sizing: margin-box;
+    max-width: 60%;
+  }
+
+  .slide__feedback__text {
+    color: rgb(51, 51, 51);
+    font-size: 21px;
+    font-weight: 400;
+    line-height: 31.5px;    
+  }
+  
+  .slide__author__wrapper {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide__author__photo {
+    border-radius: 100%;
+  }
+
+  .slide__author__details {
+    margin-left: 1rem;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: rgb(85, 85, 85);
+  }
+
+  .slide a {
+    position: absolute;
+    top: 47%;
+    width: 35px;
+    height: 35px;
+    border-width: 0 3.5px 3.5px 0;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+  
+  a.slide__prev {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 3.5%;
+  }
+  
+  a.slide__next{
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 3.5%;
+  }
+  
+  .slide a {
+    background: none;
+    border: none;
+  }
+  
+  a.slide__prev,
+  .slider::before {
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+    left: 3.5%;
+  }
+  
+  a.slide__next,
+  .slider::after {
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    right: 3.5%;
+  }
+  
+  .slider::before,
+  .slider::after,
+  .slide__prev,
+  .slide__next {
+    position: absolute;
+    top: 48%;
+    width: 27.5px;
+    height: 27.5px;
+    border: solid #d5d5d5;
+    border-width: 0 3.5px 3.5px 0;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+  
+  .slider::before,
+  .slider::after {
+    content: '';
+    z-index: 1;
+    background: none;
+    pointer-events: none;
+  }
+  
+  /* Mobile */
+@media only screen and (max-width: 700px) {
+
+  .sliderContainer {
+    padding: 80px 0;
+    height: 56.6vh;
+  }
+
+  .sliderTitle {
+    margin-top: 0;
+    font-size: 30px;
+    line-height: 33px;
+    margin-bottom: 24px;
+  }
+
+  .slide__feedback__wrapper {
+    max-width: 71vw;
+  }
+
+  .slide__feedback__text {
+    font-size: 16px;  
+    line-height: 1.5;
+    max-width: 600px;
+  }
+
+  .slide__author__wrapper {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slide__author__photo {
+    width: 24px;
+    height: 24px;
+    margin-right: 0.5rem;
+  }
+
+  .slide__author__details {
+    font-size: 14px;
+    line-height: 19.6px;
+    margin-left: 0;
+    font-weight: 400;
+  }
+
+  .slider::before,
+  .slider::after,
+  .slide__prev,
+  .slide__next {
+    position: absolute;
+    top: 48%;
+    width: 25.5px;
+    height: 25.5px;
+    border: solid #d5d5d5;
+    border-width: 0 3.5px 3.5px 0;
+    padding: 3px;
+    box-sizing: border-box;
+  }
+
+}
