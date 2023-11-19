@@ -11,10 +11,13 @@ async function get10Candidates(searchParams) {
   const paramsStr = new URLSearchParams(searchParams).toString()
 
   //pass to api
-  const baseUrl = process.env.VERCEL_URL || 'http://localhost:3000';
+  // Ensure the base URL includes the protocol
+  const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
+
   const res = await fetch(`${baseUrl}/api/candidates?${paramsStr}`, {
     cache: "no-store",
   });
+
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')
