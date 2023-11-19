@@ -12,7 +12,7 @@ async function get10Candidates(searchParams) {
 
   //pass to api
   // Ensure the base URL includes the protocol
-  const baseUrl = process.env.VERCEL_URL || 'http://localhost:3000';
+  const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}.vercel.app` : 'http://localhost:3000';
   console.log(baseUrl)
   
   const res = await fetch(`${baseUrl}/api/candidates?${paramsStr}`, {
