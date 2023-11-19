@@ -1,3 +1,4 @@
+'use client'
 import styles from "../../../styles/candidates/candidates.module.css";
 import Card from "@/components/candidates/Card";
 import Filters from "../../../components/candidates/filters/Filters";
@@ -10,7 +11,7 @@ async function get10Candidates(searchParams) {
   // get all params as a string and pass to api
   const paramsStr = new URLSearchParams(searchParams).toString()
 
-  // pass to api
+  //pass to api
   const res = await fetch(`${process.env.NEXTAUTH_URL}/api/candidates?${paramsStr}`, {
     cache: "no-store",
   })
