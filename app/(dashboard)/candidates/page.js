@@ -6,7 +6,7 @@ import Searchbar from "@/components/candidates/Searchbar"
 import ReadMore from "@/components/candidates/Description"
 import Pagination from "@/components/candidates/Pagination"
 
-/* async function get10Candidates(searchParams) {
+async function get10Candidates(searchParams) {
   // get all params as a string and pass to api
   const paramsStr = new URLSearchParams(searchParams).toString()
 
@@ -14,7 +14,7 @@ import Pagination from "@/components/candidates/Pagination"
   // Ensure the base URL includes the protocol
   const baseUrl = process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : 'http://localhost:3000';
   console.log(baseUrl)
-
+  
   const res = await fetch(`${baseUrl}/api/candidates?${paramsStr}`, {
     cache: "no-store",
   });
@@ -25,15 +25,14 @@ import Pagination from "@/components/candidates/Pagination"
   }
 
   return res.json()
-} */
+}
 
-export default async function CandidatesPage(/* { searchParams } */) {
-  /* const candidates = await get10Candidates(searchParams) */
+export default async function CandidatesPage({ searchParams }) {
+  const candidates = await get10Candidates(searchParams)
 
   return (
     <div>
-      <h1>Hello world</h1>
-      {/* <main className={styles.main}>
+      <main className={styles.main}>
         <section className={styles.titleSection}>
           <h1 className={styles.pageTitle}>Candidates</h1>
           <h1 className={styles.candidatesQty}>{candidates.profilesNum}</h1>
@@ -76,6 +75,6 @@ export default async function CandidatesPage(/* { searchParams } */) {
         </div>
       </main>
       <MobFilters searchParams={searchParams}/>
- */}    </div>
+    </div>
   )
 }
