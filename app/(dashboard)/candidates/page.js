@@ -12,7 +12,7 @@ async function get10Candidates(searchParams) {
 
   //pass to api
   // Ensure the base URL includes the protocol
-  const baseUrl = process.env.BASE_URL ? `https://${process.env.BASE_URL}.vercel.app` : 'http://localhost:3000';
+  const baseUrl = 'https://codeinterns-capstone.vercel.app'
   console.log(baseUrl)
   
   const res = await fetch(`${baseUrl}/api/candidates?${paramsStr}`, {
