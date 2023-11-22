@@ -229,7 +229,7 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
-        height: 100vh;
+        height: 100%;
         background-color: white;
         font-size: 3rem;
         overflow-y: scroll;
@@ -255,6 +255,7 @@
         background-color: #fafbfc;
         padding: 1.1rem 0.75rem;
         justify-content: space-between;
+        z-index: 100;
     }
 
     .mobFiltersSliderHeader p {
@@ -270,13 +271,17 @@
     }
 
     .close {
-        width: 16px;
+        width: 32px;
         height: 16px;
-        position: relative;
-        margin-right: 1.5rem;
+        margin-right: 0.5rem;
+        -webkit-tap-highlight-color: transparent;
     }
 
-    .close:after {
+    .chevron {
+        position: relative;
+    }
+
+    .chevron:after {
         content: '';
         height: 16px;
         border-left: 1px solid #999999;
@@ -285,7 +290,7 @@
         left: 16px;
     }
     
-    .close:before {
+    .chevron:before {
         content: '';
         height: 16px;
         border-left: 1px solid #999999;
@@ -338,6 +343,8 @@
         border-radius: 4px;
         padding: 0 4px;
         margin-bottom: 0;
+        break-inside: avoid; /* Avoid breaking inside list items */
+        -webkit-column-break-inside: avoid; /* For Webkit browsers */
     }
 
     .listItem.selected {
@@ -351,7 +358,7 @@
         justify-content: space-between;
         margin-left: 1.3rem;
     }
-
+    
     /* reset select css, inc. removing an arrow */
     .select {
         position: relative;
@@ -382,11 +389,12 @@
         color: #333;
         font-family: -apple-system, "system-ui", Inter, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
         font-weight: 400;
+        z-index: 0;
     }
 
     .select:hover {
         border-color: #777;
-      }
+    }
       
     .select:focus {
         border-color: #999;
@@ -405,6 +413,10 @@
         border-color: #999;
     }
 
+    .numberInput {
+        background-color: transparent;
+    }
+
     .mobFiltersFooter {
         position: sticky;
         bottom: 0;
@@ -421,11 +433,14 @@
         font-size: 20px;
         font-stretch: 100%;
         background-color: #ffffff;
+        color: black;
+        -webkit-tap-highlight-color: transparent;
     }
 
     .formBtn.resetActive {
-        outline: #989898 solid 4px;
-        transition: 0.1s ease-in-out;
+        border: #dadada solid 1px;
+        border-radius: 10px;
+        transition: 0.25s ease-in-out;
     }
 
     .btnApply {
@@ -455,6 +470,7 @@
         font-size: 16px;
         font-weight: 400;
         line-height: 1.7;
+        background-color: transparent;
     }
     
 }

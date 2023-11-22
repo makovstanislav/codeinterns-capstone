@@ -15,7 +15,7 @@ function Card({ description, english, experience, publishedDateStr, region, sala
     }
 
     let formattedPublicationTime = "someday"
-
+    
     function setFormattedPublicationTime () {
 
         const publishedDate = new Date(publishedDateStr)

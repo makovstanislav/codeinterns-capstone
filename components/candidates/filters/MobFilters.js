@@ -354,7 +354,9 @@ export default function MobFiltersBtn({searchParams}) {
                     </svg>
                     <p>Filters</p>
                 </div>
-                <div className={styles.close} onClick={toggleFilters}></div>
+                <div className={styles.close} onClick={toggleFilters}>
+                    <div className={styles.chevron}></div>
+                </div>
             </div>
             <div className={styles.mobFiltersSliderBody}>
                 <div className={styles.mobileFilterContainer}>

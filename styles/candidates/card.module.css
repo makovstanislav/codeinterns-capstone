@@ -173,13 +173,18 @@
 
     .description {
         line-height: 1.4;
-        max-height: 14.1rem;
+        max-height: calc(1.4em * 10); /* Adjust this value as needed */
         overflow: hidden;
         margin-bottom: 0.5rem;
     }
 
     .readMore {
         margin-bottom: 1rem;
+    }
+
+    .descOpen {
+        overflow: none;
+        max-height: fit-content;
     }
 }
 

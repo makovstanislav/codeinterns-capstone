@@ -70,7 +70,15 @@ function Searchbar({ keywords, searchOption}) {
                 </div>
                 <div className={styles.radio}>
                     <label htmlFor="radio3" className={styles.radioLabel}>Title-only search</label>
-                    <input type='radio' id="radio3" className={styles.radioButton} name="searchType" value="titleOnly" onChange={handleOptionChange} checked={option === 'titleOnly'} />
+                    <input 
+                        type='radio' 
+                        id="radio3" 
+                        className={styles.radioButton} 
+                        name="searchType" 
+                        value="titleOnly" 
+                        onChange={handleOptionChange} 
+                        checked={option === 'titleOnly'} 
+                    />
                     <span></span>
                 </div>
             </div>

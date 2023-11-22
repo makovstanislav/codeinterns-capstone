@@ -30,6 +30,7 @@
     width : 0; 
     height: 0; 
 }
+
 .searchbar::-ms-reveal { 
     display: none; 
     width : 0; height: 
@@ -120,6 +121,11 @@
 
 /* Mobile */
 @media only screen and (max-width: 700px) {
+
+    .searchbar {
+        color: black;
+    }
+
    .radioButtonsGroup {
         /* hardcode */
         flex-wrap: wrap;
@@ -127,11 +133,16 @@
 
    .radioLabel {
         width: auto; 
-        display: inline-block; 
+        display: inline-block;
+        -webkit-tap-highlight-color: transparent; 
     }
 
-    .radioLabel:focus {
-        outline: none;
+    .radioButton ~ span:before {
+        transition: border 0.3s ease; /* Adjust '0.5s' to control speed */
     }
-   
+    
+    .radioButton:checked ~ span:before {
+        border: 4.5px solid #0a69da; /* Checked state border style */
+    }    
+    
 }
