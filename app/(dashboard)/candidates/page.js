@@ -17,8 +17,7 @@ async function get10Candidates(searchParams) {
   
   const res = await fetch(`${baseUrl}/api/candidates?${paramsStr}`, {
     cache: "no-store",
-  });
-
+  })
 
   if (!res.ok) {
     throw new Error('Failed to fetch data')

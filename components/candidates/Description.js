@@ -31,12 +31,15 @@ export default function ReadMore({ description }) {
         {description}
       </div>
       {(!isOpen && rowCount >= 10) && (
-        <div className={styles.readMore} onClick={expand}>
+        <div 
+          className={styles.readMore} 
+          onClick={expand}
+        >
           Read more
         </div>
       )}
     </div>
-  );
+  )
 }
 
 

@@ -83,6 +83,7 @@
 .avatar {
     border-radius: 100%;
     margin-right: 10px;
+    object-fit: cover;
 }
 
 .togglerDesktop {
@@ -177,7 +178,7 @@
         overflow: hidden;
         max-height: 0; 
         transition: max-height 0.3s ease-out; 
-      }
+    }
       
     .menusWrapper.open {
         max-height: 600px; 
