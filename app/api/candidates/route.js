@@ -93,7 +93,7 @@ export async function GET(req) {
 
     // filter by searchType
     if (searchType) {
-        const type = searchType.split("")[0]
+        const type = searchType.split(" ")[0]
         const result = allCandidatesArr.filter(candidate => candidate.searchType === type)
         allCandidatesArr = result
     }
@@ -162,8 +162,6 @@ export async function GET(req) {
         profiles: profiles(),
         profilesNum: allCandidatesArr.length
     }
-
-    console.log(result)
     
     return NextResponse.json(result)
 }
