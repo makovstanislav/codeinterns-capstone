@@ -93,7 +93,8 @@ export async function GET(req) {
 
     // filter by searchType
     if (searchType) {
-        const result = allCandidatesArr.filter(candidate => candidate.searchType === 'Active')
+        const type = searchType.split("")[0]
+        const result = allCandidatesArr.filter(candidate => candidate.searchType === type)
         allCandidatesArr = result
     }
 
