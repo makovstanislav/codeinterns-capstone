@@ -52,8 +52,12 @@ export default function Filters({ searchParams }) {
                     {['JavaScript / Front-End', 'Java', 'C# / .NET', 'Python', 'PHP', 'Node.js', 'iOS', 'Android', 'C / C++ / Embedded', 'Flutter', 'Golang', 'Ruby', 'Scala', 'Salesforce', 'Rust', 'Other (tech)'].map((tech) => (
                         <li key={tech}>
                             <a 
-                                className={Object.keys(searchParams).includes('field') && `?field=${tech}`.toLowerCase().includes(searchParams.field.toLowerCase()) ? styles.listItemActive : styles.listItem} 
-                                href={updatedQueryString(searchParams, 'field', tech)} 
+                                className={
+                                    Object.keys(searchParams).includes('field') && 
+                                    searchParams.field.toLowerCase() === tech.toLowerCase()
+                                    ? styles.listItemActive : styles.listItem
+                                } 
+                                href={updatedQueryString(searchParams, 'field', tech)}
                             >
                                 {tech}
                             </a>
@@ -149,7 +153,11 @@ export default function Filters({ searchParams }) {
                     ].map((level) => (
                         <li key={level}>
                             <a 
-                                className={Object.keys(searchParams).includes('englishLevel') && `?englishLevel=${level}`.toLowerCase().includes(searchParams.englishLevel.toLowerCase()) ? styles.listItemActive : styles.listItem} 
+                                className={
+                                    Object.keys(searchParams).includes('englishLevel') && 
+                                    searchParams.englishLevel.toLowerCase() === level.toLowerCase()
+                                    ? styles.listItemActive : styles.listItem
+                                } 
                                 href={updatedQueryString(searchParams, 'englishLevel', level)} 
                             >
                                 {level}

@@ -23,7 +23,7 @@ function Header() {
     <div className={styles.header}>
       <div>
         {/* logo */}
-        <a className={styles.logo} href='/'>
+        <a className={styles.logo} href='#'>
           <Image
             src="/assets/logo.png"
             className={styles.logo_img}
@@ -43,7 +43,7 @@ function Header() {
     <div className={`${styles.menusWrapper} ${isMobMenuOpen ? styles.open : ""}`}>        
       <NavMenu />
       <div className={styles.myProfileContainer}>
-        <a href="/">
+        <a href="#">
           <Image
             src="/dashboard/nav/avatar.jpg"
             className={styles.avatar}

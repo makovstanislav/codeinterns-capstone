@@ -11,16 +11,16 @@ function Footer() {
         width={27}
       ></Image>
       <div className={styles.linksWrapper}>
-        <a href="/" className={styles.link}>
+        <a href="#" className={styles.link}>
           Blog
         </a>
-        <a href="/" className={styles.link}>
+        <a href="#" className={styles.link}>
           Terms of use
         </a>
-        <a href="/" className={styles.link}>
+        <a href="#" className={styles.link}>
           Privacy
         </a>
-        <a href="/" className={styles.link}>
+        <a href="#" className={styles.link}>
           Suggest an idea
         </a>
       </div>

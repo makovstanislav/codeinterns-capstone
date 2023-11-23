@@ -16,14 +16,14 @@ export default function AccountOptions({ toggle, isOpen, setIsOpen }) {
         if (ref.current && !ref.current.contains(event.target)) {
             setIsOpen(false);
         }
-    };
+    }
 
     const options = (
         <ul className={styles.optionsList}>
-            <li><a className={styles.option} href='/'>My profile</a></li>
-            <li><a className={styles.option} href='/'>Settings</a></li>
+            <li><a className={styles.option} href='#'>My profile</a></li>
+            <li><a className={styles.option} href='#'>Settings</a></li>
             <hr></hr>
-            <li><a className={styles.option} href='/'>Logout</a></li>
+            <li><a className={styles.option} href='#'>Logout</a></li>
         </ul>
     )
 

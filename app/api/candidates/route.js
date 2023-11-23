@@ -64,8 +64,14 @@ export async function GET(req) {
 
     // filter by field (2nd time)
     if (field) {
-        const result = allCandidatesArr.filter(candidate => candidate.Title.toLowerCase().includes(field.toLowerCase()))
-        allCandidatesArr = result
+        // Split the field into words by non-word characters (like spaces, slashes, commas, etc.)
+        const fieldWords = field.toLowerCase().split(/[\W_]+/); 
+        const result = allCandidatesArr.filter(candidate => {
+            const title = candidate.Title.toLowerCase();
+            const description = (candidate.Description || '').toLowerCase();
+            return fieldWords.some(word => title.includes(word) || description.includes(word));
+        });
+        allCandidatesArr = result;
     }
 
     // filter by eng
@@ -106,10 +112,10 @@ export async function GET(req) {
 
         allCandidatesArr.forEach(node => {
             let nodeTexts = [
-                (node['Title'] || '').toLowerCase(),
-                (node['Employment'] || '').toLowerCase(),
-                (node['Region'] || '').toLowerCase(),
-                ...(node['Skills'] || []).map(skill => skill.toLowerCase())
+                (node['title'] || '').toLowerCase(),
+                (node['employment'] || '').toLowerCase(),
+                (node['region'] || '').toLowerCase(),
+                ...(node['skills'] || []).map(skill => skill.toLowerCase())
             ]   
 
             // filter by keywords (searchbar input)
@@ -144,12 +150,14 @@ export async function GET(req) {
 
         return allCandidatesArr.slice(startIndex, endIndex);
     }    
-    
+
     const result = {
         totalPages: totalPages,
         profiles: profiles(),
         profilesNum: allCandidatesArr.length
     }
 
+    console.log(result)
+    
     return NextResponse.json(result)
 }
