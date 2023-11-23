@@ -13,7 +13,6 @@ async function get10Candidates(searchParams) {
   //pass to api
   // Ensure the base URL includes the protocol
   const baseUrl = 'https://codeinterns-capstone.vercel.app'
-  console.log(baseUrl)
   
   const res = await fetch(`${baseUrl}/api/candidates?${paramsStr}`, {
     cache: "no-store",

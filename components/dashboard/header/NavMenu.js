@@ -16,7 +16,7 @@ function NavMenu() {
     return (
         <div>
             <ul className={styles.navbar}>
-                {navItems.map(item => <li className={`${pathname.toLowerCase().includes(item.toLowerCase()) ? styles.navbar_item_active : styles.navbar_item}`}><Link href='/'>{item}</Link></li> )}
+                {navItems.map(item => <li className={`${pathname.toLowerCase().includes(item.toLowerCase()) ? styles.navbar_item_active : styles.navbar_item}`}><Link href='#'>{item}</Link></li> )}
             </ul>
         </div>
     )
