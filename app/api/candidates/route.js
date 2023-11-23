@@ -64,15 +64,17 @@ export async function GET(req) {
 
     // filter by field (2nd time)
     if (field) {
-        // Normalize and split the field into keywords/phrases
-        const fieldKeywords = field.toLowerCase().split(/[\s\/,]+/);
+        // Split the field into separate phrases for exact matching
+        const fieldPhrases = field.split(/\s*\/\s*/);
     
         const result = allCandidatesArr.filter(candidate => {
             const title = candidate.Title.toLowerCase();
             const description = (candidate.Description || '').toLowerCase();
-            return fieldKeywords.some(keyword => 
-                title.includes(keyword) || description.includes(keyword)
-            );
+            return fieldPhrases.some(phrase => {
+                // Use regular expression for accurate matching
+                let regex = new RegExp("\\b" + phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + "\\b", "i");
+                return regex.test(title) || regex.test(description);
+            });
         });
         allCandidatesArr = result;
     }
