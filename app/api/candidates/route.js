@@ -64,12 +64,15 @@ export async function GET(req) {
 
     // filter by field (2nd time)
     if (field) {
-        // Split the field into words by non-word characters (like spaces, slashes, commas, etc.)
-        const fieldWords = field.toLowerCase().split(/[\W_]+/); 
+        // Normalize and split the field into keywords/phrases
+        const fieldKeywords = field.toLowerCase().split(/[\s\/,]+/);
+    
         const result = allCandidatesArr.filter(candidate => {
             const title = candidate.Title.toLowerCase();
             const description = (candidate.Description || '').toLowerCase();
-            return fieldWords.some(word => title.includes(word) || description.includes(word));
+            return fieldKeywords.some(keyword => 
+                title.includes(keyword) || description.includes(keyword)
+            );
         });
         allCandidatesArr = result;
     }
