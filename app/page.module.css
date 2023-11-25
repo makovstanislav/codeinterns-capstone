@@ -1,11 +1,12 @@
 .main {
-  background: white;
+  background: #1e2633;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
+  
 }
 
 .header {
@@ -14,13 +15,11 @@
   width: 100%;
   justify-content: space-between;
   margin-top: 0;
-  background-color: #003a9b;
+  background-color: rgba(30,38,51,255);
   z-index: 1;
 }
 
 .logo {
-  fill: #003a9b;
-  background-color: #003a9b;
   margin-left: 25rem;  
 }
 
@@ -60,18 +59,22 @@
 }
 
 .intro h1 {
-  margin-top: 7.5rem;
-  font-size: 3rem;
-  color: #003a9b;
-  text-align: center;
-  -webkit-font-smoothing: antialiased;
-  line-height: 56px;
-  z-index: 1;
+  font-size: 2.5rem; /* Adjust size as needed */
+  line-height: 1.2; /* Start with 1.2 and increase if it looks too tight */
+  letter-spacing: -0.5px; /* Reduce spacing if the text looks too stretched */
+  color: #FFFFFF; /* Assuming white text for contrast */
+  max-width: 600px; /* This will depend on your design, but 600px is a good start */
+  margin-left: auto; /* Center the heading horizontally */
+  margin-right: auto;
+  margin-top: 6rem;
+  text-align: center; 
 }
+
+
 
 .intro h3 {
   margin-top: 1.5rem;
-  color: #595959;
+  color: #CCCCCC;
   text-align: center;
   font-size: 21px;
   font-weight: 400;
@@ -81,7 +84,6 @@
   height: 32px;
   margin-bottom: 2rem;
   z-index: 1;
-
 }
 
 .introBtns {
@@ -92,39 +94,40 @@
 }
 
 .btn {
+  min-height: 44px;
+  min-width: 44px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   font-family: "Helvetica Neue", Helvetica, sans-serif;
   font-size: 1.1875rem;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
   padding: 8px 24px;
-  margin: 0 6px;
+  margin: 0 10px;
   transition: all .25s ease;
   z-index: 1;
 }
 
 .btnHire {
-  background-color: white;
-  color: #323333;
+  background-color: #F0F0F0; /* Lighter background for the 'Hire talent' button */
+  color: #333333; /* Dark text for readability */
 }
 
 .btnHire:hover {
-  background-color: hsl(230, 35%, 87%);
+  background-color: #E0E0E0;
 }
 
 .btnFind {
-  color: white;
-  border: 1px solid #7c64b4;
-  background-color: #2557a6;
+  background-color: #4CAF50; /* A more vibrant green for the 'Find a job' button */
+  color: #FFFFFF;
 }
 
 .btnFind:hover {
   border-color: #6246A4;
-  background-color: #174081;
+  background-color: #43A047;
 }
 
 .candidatesImg {
@@ -137,6 +140,7 @@
 
 .candidatesImgMob {
   display: none;
+  object-fit: cover;
 }
 
 .companiesSection {
@@ -196,7 +200,6 @@
 }
 
 .ciForSubtitle{
-  color: #432092;
   margin-bottom: 24px;
   font-size: 21px;
   font-weight: 600;
@@ -220,6 +223,8 @@
   width: 92.4vw;
   height: 61.8vh;
   border-radius: 16px;
+  object-fit: cover;
+  border: 1px solid #eeeeee;
 }
 
 .benefits {
@@ -262,6 +267,15 @@
   .header {
     justify-content: space-between;
     width: 100%;
+    min-height: 55px;
+  }
+
+  .logo {
+    margin-left: 1rem;
+  }
+
+  .signIn {
+    margin-right: 1rem;
   }
 
   .plant {
@@ -275,13 +289,14 @@
   }
   
   .intro h1 {
-    margin-top: 5rem;
-    font-size: 29px;
-    line-height: 32px;
+    font-size: 3rem;
+    line-height: 1.3;
+    margin-top: 4rem;
   }
 
   .intro h3 {
     margin-bottom: 4rem;
+    color: #BBBBBB;
   }
 
   .candidatesImg {
@@ -292,6 +307,8 @@
     display: block;
     width: 90vw;
     height: 70vh;
+    object-fit: cover;
+    border: 1px solid #eeeeee;
   }
 
   .companiesSection {
@@ -302,6 +319,7 @@
 
   .employmentCards {
     flex-direction: column;
+    justify-content: none;
   }
 
   .employment {
@@ -317,23 +335,18 @@
   .employment img {
     width: 40px;
     height: 40px;
+    margin-right: 1rem;
     margin-bottom: 0;
     border-radius: 50%;
-    border: 1px solid #eeeeee;
-  }
-
-  .employment p {
-    display: block;
   }
 
   .employer {
-    margin-left: 15px;
     font-size: 16px;
     font-weight: 400;
   }
 
   .role {
-    margin-left: 5px;
+    margin-left: 0.4rem;
   }
 
   .ciForTitle {
@@ -349,6 +362,7 @@
 
   .ciForImgMob {
     display: block;
+    object-fit: cover;
   }
 
   .benefits {

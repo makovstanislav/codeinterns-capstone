@@ -163,7 +163,7 @@
         justify-content: space-between;
         width: 100%;
     }
-
+    
     .mobTrigger {
         display: flex;
         margin-left: auto;
@@ -179,7 +179,7 @@
         max-height: 0; 
         transition: max-height 0.3s ease-out; 
     }
-      
+    
     .menusWrapper.open {
         max-height: 600px; 
         transition: max-height 0.3s ease-in; 

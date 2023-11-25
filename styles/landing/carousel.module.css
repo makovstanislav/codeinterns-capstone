@@ -118,6 +118,10 @@
   .slide a {
     background: none;
     border: none;
+    margin-left: -1rem;
+    margin-top: -1rem;
+    width: 60px;
+    height: 60px;
   }
   
   a.slide__prev,
@@ -132,6 +136,12 @@
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
     right: 3.5%;
+    width: 60px;
+    height: 60px;
+  }
+
+  a.slide__next {
+    margin-right: -1.3rem;
   }
   
   .slider::before,
@@ -155,6 +165,7 @@
     background: none;
     pointer-events: none;
   }
+  
   
   /* Mobile */
 @media only screen and (max-width: 700px) {
