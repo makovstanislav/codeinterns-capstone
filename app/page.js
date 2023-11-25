@@ -16,7 +16,7 @@ export default function Home() {
             height={14}
           ></Image>
         </a>
-        <Link className={styles.signIn} href="/signin">
+        <Link className={styles.signIn} href="/transfer">
           Sign In
         </Link>
       </div>
@@ -29,10 +29,10 @@ export default function Home() {
           globally.
         </h3>
         <div className={styles.introBtns}>
-          <Link className={`${styles.btn} ${styles.btnHire}`} href="/">
+          <Link className={`${styles.btn} ${styles.btnHire}`} href="/transfer">
             Hire talent
           </Link>
-          <Link className={`${styles.btn} ${styles.btnFind}`} href="/">
+          <Link className={`${styles.btn} ${styles.btnFind}`} href="/transfer">
             Find a job
           </Link>
         </div>

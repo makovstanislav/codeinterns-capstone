@@ -1,0 +1,52 @@
+/* transfer.module.css */
+.transferPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.redirecting {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem; /* Reduced margin to move text upwards */
+    color: #2e2e2e; /* Friendly dark grey color */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem; /* Adjusted margin-top to balance spacing */
+}
+
+.title {
+    font-size: 2rem;
+    margin: 1rem 0;
+    color: #4a90e2; /* Soft blue for a positive vibe */
+}
+
+.logo {
+    /* Additional styles for the construction image if needed */
+}
+
+@media only screen and (max-width: 768px) {
+
+    .transferPage {
+        justify-content: start;
+    }
+
+    .redirecting {
+        font-size: 1.2rem;
+        margin-top: 5rem; /* Adjust for smaller screens */
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    /* Additional responsive adjustments if needed */
+}
