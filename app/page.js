@@ -20,21 +20,9 @@ export default function Home() {
           Sign In
         </Link>
       </div>
-      <Image
-        className={styles.bgImg}
-        src="/landing/test.jpeg"
-        width={400}
-        height={400}
-      ></Image>
-      <Image
-        className={styles.bgImgSecond}
-        src="/landing/plant_blue.jpg"
-        width={800}
-        height={800}
-      ></Image>
       <div className={styles.intro}>
         <h1>
-          Explore opportunities in IT: <br></br> remote & in-person jobs
+          Find your first job in IT
         </h1>
         <h3>
           For all ages and levels of proficiency. Direct access to companies
@@ -78,7 +66,7 @@ export default function Home() {
           </li>
           <li className={styles.employment}>
             <Image
-              src={"/landing/quantileafTrans.png"}
+              src={"/landing/quantileaf.png"}
               height={86}
               width={86}
             ></Image>
@@ -103,14 +91,13 @@ export default function Home() {
             <p className={styles.employer}>CyberPulse hired</p>
             <p className={styles.role}>Sr. Product Designer</p>
           </li>
-
           <li className={styles.employment}>
             <Image
-              src={"/landing/infradynamo.png"}
+              src={"/landing/infra.png"}
               height={86}
               width={86}
             ></Image>
-            <p className={styles.employer}>InfraDynamo hired</p>
+            <p className={styles.employer}>Infra hired</p>
             <p className={styles.role}>QA Automation Engineer</p>
           </li>
         </ul>
@@ -178,12 +165,11 @@ export default function Home() {
           </li>
         </ul>
       </div>
-
       <div className={styles.ciFor}>
         <p className={styles.ciForSubtitle}>Codeinterns for job search</p>
         <h2 className={styles.ciForTitle}>
           <span>Find jobs that fit you.</span>
-          <span>Globally & seamlessly</span>
+          <span> Globally & seamlessly</span>
         </h2>
         <Link className={`${styles.btn} ${styles.btnFind}`} href="/">
           Find a job
@@ -258,5 +244,5 @@ export default function Home() {
       </div>
       <Footer />
     </main>
-  );
+  )
 }
