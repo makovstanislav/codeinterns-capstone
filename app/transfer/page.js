@@ -6,7 +6,7 @@ import styles from "../../styles/transfer.module.css";
 
 export default function Transfer() {
     const router = useRouter();
-    const [countdown, setCountdown] = useState(5); // Initialize countdown at 3 seconds
+    const [countdown, setCountdown] = useState(4); // Initialize countdown at 4 seconds
 
     useEffect(() => {
         // If countdown reaches 0, redirect the user
@@ -31,7 +31,7 @@ export default function Transfer() {
             </p>
             <div className={styles.container}>
                 <p className={styles.title}>
-                    The page is getting a makeover. Hang tight!
+                    The page is getting a makeover. Coming soon!
                 </p>
                 <Image
                     className={styles.logo}
