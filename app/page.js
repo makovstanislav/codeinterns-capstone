@@ -109,7 +109,7 @@ export default function Home() {
           <span>Browse a wide variety of candidates, </span>
           <span>recruit directly</span>
         </h2>
-        <Link className={`${styles.btn} ${styles.btnFind}`} href="/">
+        <Link className={`${styles.btn} ${styles.btnFind}`} href="/transfer">
           Hire talent
         </Link>
         <Image
@@ -171,7 +171,7 @@ export default function Home() {
           <span>Find jobs that fit you.</span>
           <span> Globally & seamlessly</span>
         </h2>
-        <Link className={`${styles.btn} ${styles.btnFind}`} href="/">
+        <Link className={`${styles.btn} ${styles.btnFind}`} href="/transfer">
           Find a job
         </Link>
         <Image
@@ -234,10 +234,10 @@ export default function Home() {
         </h1>
         <h3>Chat directly. See salaries in advance. Work without middlemen.</h3>
         <div className={styles.introBtns}>
-          <Link className={`${styles.btn} ${styles.btnHire}`} href="/">
+          <Link className={`${styles.btn} ${styles.btnHire}`} href="/transfer">
             Hire talent
           </Link>
-          <Link className={`${styles.btn} ${styles.btnFind}`} href="/">
+          <Link className={`${styles.btn} ${styles.btnFind}`} href="/transfer">
             Find a job
           </Link>
         </div>
