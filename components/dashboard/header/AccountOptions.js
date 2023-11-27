@@ -9,8 +9,8 @@ export default function AccountOptions({ toggle, isOpen, setIsOpen }) {
         document.addEventListener('mousedown', handleClickOutside);
         return () => {
             document.removeEventListener('mousedown', handleClickOutside);
-        };
-    });
+        }
+    })
 
     const handleClickOutside = (event) => {
         if (ref.current && !ref.current.contains(event.target)) {
@@ -23,7 +23,7 @@ export default function AccountOptions({ toggle, isOpen, setIsOpen }) {
             <li><a className={styles.option} href='#'>My profile</a></li>
             <li><a className={styles.option} href='#'>Settings</a></li>
             <hr></hr>
-            <li><a className={styles.option} href='#'>Logout</a></li>
+            <li><a className={styles.option} href='/'>Logout</a></li>
         </ul>
     )
 
