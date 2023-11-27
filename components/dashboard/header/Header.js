@@ -23,7 +23,7 @@ function Header() {
     <div className={styles.header}>
       <div>
         {/* logo */}
-        <a className={styles.logo} href='#'>
+        <a className={styles.logo} href='/'>
           <Image
             src="/assets/logo.png"
             className={styles.logo_img}
