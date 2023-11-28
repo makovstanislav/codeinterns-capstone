@@ -2,12 +2,38 @@
 
 Code Interns is a job board designed for connecting interns with potential employers. It allows for CRUD (CREATE, READ, UPDATE, DELETE) operations and serves as my capstone project.
 
+<div>
+    <h2>Table of Contents</h2>
+    <ol>
+        <li><a href="#visuals" style="text-decoration: none;">Visuals</a></li>
+        <li><a href="#features-availability" style="text-decoration: none;">Features</a></li>
+        <li><a href="#stack" style="text-decoration: none;">Stack</a></li>
+        <li><a href="#usage" style="text-decoration: none;">Usage</a></li>
+        <li><a href="#license" style="text-decoration: none;">License</a></li>
+    </ol>
+</div>
+
 ## Visuals
-![Candidates feed desktop!](/public/readme/screenshot-desktop-candidates.jpg "Candidates feed desktop")
-![Candidates feed mobile](/public/readme/screenshot-mobile-candidates.jpg "Candidates feed mobile")
-![Candidates feed filters!](/public/readme/screenshot-mobile-candidates-filters.jpg "Candidates feed filters")
+#### Candidates
+<div style="margin-bottom: 20px;">
+    <img src="/public/readme/screenshot-desktop-candidates.jpg" alt="Candidates feed desktop" width="80%" height="50%" style="border: 2px solid #000; border-radius: 10px;" />
+</div>
+
+<div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+    <div>
+        <h4>Candidates mobile</h4>
+        <img src="/public/readme/screenshot-mobile-candidates.jpg" alt="Candidates feed mobile" width="25%" style="border: 2px solid #000; border-radius: 10px;" />
+    </div>
+    <div>
+        <h4>Filters mobile</h4>
+        <img src="/public/readme/screenshot-mobile-candidates-filters.jpg" alt="Candidates feed filters" width="25%" style="border: 2px solid #000; border-radius: 10px;" />
+    </div>
+</div>
+
+
 
 ## Features Availability
+
 
 |          | Feature                       | Status         |
 |--------------------------|-------------------------------|----------------|
@@ -41,7 +67,7 @@ Code Interns is a job board designed for connecting interns with potential emplo
 **Back-end:** Node.js, Firebase <br>
 **Deployment:** Vercel <br>
 
-## Getting Started
+## Usage
 
 ### Pre-requisites
 
