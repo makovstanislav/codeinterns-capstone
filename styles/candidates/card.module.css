@@ -32,6 +32,10 @@
     color: #054691;
 }
 
+.essentials {
+    white-space: nowrap;
+}
+
 .essentialsItem, .salaryYear {
     color: #757575;
     font-size: 0.875rem;

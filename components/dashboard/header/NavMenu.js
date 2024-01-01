@@ -6,11 +6,11 @@ import { usePathname } from "next/navigation"
 function NavMenu() {
     const pathname = usePathname()
     const navItems = [
-        'Inbox',
+        'Messaging',
         'Candidates',
-        'Jobs',
-        'Salaries',
-        'Guides'
+        'Vacancies',
+        'Pay Rates',
+        'Tutorial'
     ]
 
     return (

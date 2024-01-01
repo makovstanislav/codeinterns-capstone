@@ -22,9 +22,9 @@ export default function() {
                 </a>
             </div>
             <div className={styles.additional__info}>
-                <a href='/' className={styles.additional__info__link}>Pricing</a>
-                <a href='/' className={styles.additional__info__link}>Privacy</a>
-                <a href='/' className={styles.additional__info__link}>Hiring Guide</a>
+                <a href='/' className={styles.additional__info__link}>Privacy policy</a>
+                <a href='/' className={styles.additional__info__link}>Terms of use</a>
+                <a href='/' className={styles.additional__info__link}>Contact us</a>
                 <a href='/' className={styles.additional__info__link} id='copyright'>© 2023 CodeInterns.com</a>
             </div>
         </div>

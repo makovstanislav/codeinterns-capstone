@@ -12,16 +12,13 @@ function Footer() {
       ></Image>
       <div className={styles.linksWrapper}>
         <a href="#" className={styles.link}>
-          Blog
+          Privacy policy
         </a>
         <a href="#" className={styles.link}>
           Terms of use
         </a>
         <a href="#" className={styles.link}>
-          Privacy
-        </a>
-        <a href="#" className={styles.link}>
-          Suggest an idea
+          Contact us
         </a>
       </div>
       <div className={styles.copyrightWrapper}>
@@ -31,7 +28,7 @@ function Footer() {
         <p className={styles.link}>© 2023 CodeInterns.com</p>
       </div>
     </footer>
-  );
+  )
 }
 
-export default Footer;
+export default Footer

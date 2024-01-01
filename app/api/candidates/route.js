@@ -128,18 +128,18 @@ export async function GET(req) {
             if (option === 'titleOnly') {
                 // title-only search 
                 if (keywordsArray.every(keyword => node.Title.toLowerCase().includes(keyword))) {
-                    filteredCandidatesArr.push(node);
+                    filteredCandidatesArr.push(node)
                 }
             } else if (option === 'fullText') {
                 // full-text search
                 if (keywordsArray.every(keyword => node.Description.toLowerCase().includes(keyword))) {
-                    filteredCandidatesArr.push(node);
+                    filteredCandidatesArr.push(node)
                 }
             } else {
                 // is every keyword included in the fields
                 if (keywordsArray.every(keyword => nodeTexts.some(text => text.toLowerCase().includes(keyword)))) {
                     // basic search
-                    filteredCandidatesArr.push(node);
+                    filteredCandidatesArr.push(node)
                 }
             } 
         })

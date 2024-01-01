@@ -10,7 +10,7 @@ export default function Filters({ searchParams }) {
         <section className={styles.filtersDesktop}>
             <div id='regionSection'>
                 <div className={styles.filterHeadingContainer}>
-                    <h4 className={styles.filterTitle}>Region</h4>
+                    <h4 className={styles.filterTitle}>Location</h4>
                     <CloseButton
                         searchParams={searchParams} 
                         queries={'region'}
@@ -41,13 +41,13 @@ export default function Filters({ searchParams }) {
             </div>
             <div id='jobTitleSection'>
                 <div className={styles.filterHeadingContainer}>
-                    <h4 className={styles.filterTitle}>Job Title</h4>
+                    <h4 className={styles.filterTitle}>Field</h4>
                     <CloseButton
                         searchParams={searchParams} 
                         queries={'field'}
                     />
                 </div>
-                <p className={styles.filterSubtitle}>Development</p>
+                <p className={styles.filterSubtitle}>Programming</p>
                 <ul className={styles.list}>
                     {['JavaScript / Front-End', 'Java', 'C# / .NET', 'Python', 'PHP', 'Node.js', 'iOS', 'Android', 'C / C++ / Embedded', 'Flutter', 'Golang', 'Ruby', 'Scala', 'Salesforce', 'Rust', 'Other (tech)'].map((tech) => (
                         <li key={tech}>
@@ -64,7 +64,7 @@ export default function Filters({ searchParams }) {
                         </li>
                     ))}
                 </ul>
-                <p className={styles.filterSubtitle}>Other (tech)</p>
+                <p className={styles.filterSubtitle}>Operational tech</p>
                 <ul className={styles.list}>
                     {[
                         'QA Manual', 
@@ -95,7 +95,7 @@ export default function Filters({ searchParams }) {
                         </li>
                     ))}
                 </ul>
-                <p className={styles.filterSubtitle}>Other (non tech)</p>
+                <p className={styles.filterSubtitle}>Business functions</p>
                 <ul className={styles.list}>
                     {[
                         'Marketing', 
@@ -128,7 +128,7 @@ export default function Filters({ searchParams }) {
             />
             <RangeInput 
                 searchParams={searchParams}
-                title={'Salary expectations USD'}
+                title={'Pay Expectations (USD)'}
                 queryFrom={'salaryFrom'}
                 queryTo={'salaryTo'}
                 max={20000}
@@ -136,7 +136,7 @@ export default function Filters({ searchParams }) {
            
             <div id='engLevelSection'>
                 <div className={styles.filterHeadingContainer}>
-                    <h4 className={styles.filterTitle}>English level</h4>
+                    <h4 className={styles.filterTitle}>English</h4>
                     <CloseButton
                         searchParams={searchParams} 
                         queries={'englishLevel'}
@@ -168,7 +168,7 @@ export default function Filters({ searchParams }) {
             </div>
             <div id='employmentTypeSection'>
                 <div className={styles.filterHeadingContainer}>
-                    <h4 className={styles.filterTitle}>Employment</h4>
+                    <h4 className={styles.filterTitle}>Work format</h4>
                     <CloseButton
                         searchParams={searchParams} 
                         queries={'employment'}
@@ -195,7 +195,7 @@ export default function Filters({ searchParams }) {
             </div>
             <div id='searchTypeSection'>
                 <div className={styles.filterHeadingContainer}>
-                    <h4 className={styles.filterTitle}>Search type</h4>
+                    <h4 className={styles.filterTitle}>Candidate's status</h4>
                     <CloseButton
                         searchParams={searchParams} 
                         queries={'searchType'}
@@ -203,7 +203,7 @@ export default function Filters({ searchParams }) {
                 </div>
                 <ul className={styles.list}>
                     {
-                        ['Active search candidates', 'Passive search candidates'].map((searchType) => (
+                        ['Active search', 'Passive search'].map((searchType) => (
                             <li key={searchType}>
                                 <a 
                                     className={

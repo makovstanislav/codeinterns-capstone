@@ -43,7 +43,7 @@ function Searchbar({ keywords, searchOption}) {
             </form>
             <div className={styles.radioButtonsGroup}>
                 <div className={styles.radio}>
-                    <label htmlFor="radio1" className={styles.radioLabel}>Basic search</label>
+                    <label htmlFor="radio1" className={styles.radioLabel}>General search</label>
                     <input 
                         type='radio' 
                         id="radio1" 
@@ -56,7 +56,7 @@ function Searchbar({ keywords, searchOption}) {
                     <span></span>
                 </div>
                 <div className={styles.radio}>
-                    <label htmlFor="radio2" className={styles.radioLabel}>Full-text search</label>
+                    <label htmlFor="radio2" className={styles.radioLabel}>By content</label>
                     <input 
                         type='radio' 
                         id="radio2" 
@@ -69,7 +69,7 @@ function Searchbar({ keywords, searchOption}) {
                     <span></span>
                 </div>
                 <div className={styles.radio}>
-                    <label htmlFor="radio3" className={styles.radioLabel}>Title-only search</label>
+                    <label htmlFor="radio3" className={styles.radioLabel}>By title</label>
                     <input 
                         type='radio' 
                         id="radio3" 

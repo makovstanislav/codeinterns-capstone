@@ -3,7 +3,6 @@ import Card from "@/components/candidates/Card"
 import Filters from "../../../components/candidates/filters/Filters"
 import MobFilters from "@/components/candidates/filters/MobFilters"
 import Searchbar from "@/components/candidates/Searchbar"
-import ReadMore from "@/components/candidates/Description"
 import Pagination from "@/components/candidates/Pagination"
 
 async function get10Candidates(searchParams) {
@@ -12,7 +11,7 @@ async function get10Candidates(searchParams) {
 
   //pass to api
   // Ensure the base URL includes the protocol
-  const baseUrl = 'https://codeinterns-capstone.vercel.app'
+  const baseUrl = 'http://localhost:3000'
   
   const res = await fetch(`${baseUrl}/api/candidates?${paramsStr}`, {
     cache: "no-store",

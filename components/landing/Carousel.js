@@ -25,7 +25,7 @@ export default function Carousel() {
     
     return(
         <div className={styles.sliderContainer}>
-            <h2 className={styles.sliderTitle}>What people say about Codeinterns</h2>
+            <h2 className={styles.sliderTitle}>Feedbacks from business</h2>
             <div className={styles.slider}>
                 <div className={styles.slides} title="Slides">
                     <div id="slides__1" className={styles.slide}>

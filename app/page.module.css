@@ -6,7 +6,6 @@
   align-items: center;
   text-rendering: optimizelegibility;
   -webkit-font-smoothing: antialiased;
-  
 }
 
 .header {
@@ -130,17 +129,11 @@
   background-color: #43A047;
 }
 
-.candidatesImg {
+.mainImg {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  background-size: cover;
-  border: 1px solid #eeeeee;
-  z-index: 1;
-}
-
-.candidatesImgMob {
-  display: none;
   object-fit: cover;
+  z-index: 1;
 }
 
 .companiesSection {
@@ -216,12 +209,6 @@
 
 .ciForImg {
   margin-top: 64px;
-}
-
-.ciForImgMob {
-  display: none;
-  width: 92.4vw;
-  height: 61.8vh;
   border-radius: 16px;
   object-fit: cover;
   border: 1px solid #eeeeee;
@@ -299,21 +286,16 @@
     color: #BBBBBB;
   }
 
-  .candidatesImg {
-    display: none;
-  }
-
-  .candidatesImgMob {
+  .mainImg {
     display: block;
     width: 90vw;
     height: 70vh;
     object-fit: cover;
-    border: 1px solid #eeeeee;
   }
 
   .companiesSection {
     padding: 40px 15px 32px 15px;
-    justify-content: baseline;
+    justify-content: center;
     text-align: start;
   }
 
@@ -357,12 +339,9 @@
   }
 
   .ciForImg {
-    display: none;
-  }
-
-  .ciForImgMob {
+    width: 92.4vw;
+    height: 61.8vh;
     display: block;
-    object-fit: cover;
   }
 
   .benefits {

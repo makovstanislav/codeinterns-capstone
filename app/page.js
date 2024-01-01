@@ -30,21 +30,15 @@ export default function Home() {
         </h3>
         <div className={styles.introBtns}>
           <Link className={`${styles.btn} ${styles.btnHire}`} href="/transfer">
-            Hire talent
+             Recruit 
           </Link>
           <Link className={`${styles.btn} ${styles.btnFind}`} href="/transfer">
-            Find a job
+            Find job
           </Link>
         </div>
         <Image
-          className={styles.candidatesImg}
-          src={"/landing/candidates_desktop.png"}
-          width={968}
-          height={585}
-        ></Image>
-        <Image
-          className={`${styles.candidatesImg} ${styles.candidatesImgMob}`}
-          src={"/landing/candidates_mobile.png"}
+          className={styles.mainImg}
+          src={"/landing/internship.jpg"}
           width={968}
           height={585}
         ></Image>
@@ -52,7 +46,7 @@ export default function Home() {
 
       <div className={styles.companiesSection}>
         <p className={styles.companiesSectionTitle}>
-          INDUSTRY LEADERS EMPLOY VIA CODEINTERNS
+          LEADERS EMPLOY VIA CODEINTERNS
         </p>
         <ul className={styles.employmentCards}>
           <li className={styles.employment}>
@@ -104,23 +98,16 @@ export default function Home() {
       </div>
 
       <div className={styles.ciFor}>
-        <p className={styles.ciForSubtitle}>Codeinterns for hiring</p>
+        <p className={styles.ciForSubtitle}>Codeinterns for scouting</p>
         <h2 className={styles.ciForTitle}>
-          <span>Browse a wide variety of candidates, </span>
-          <span>recruit directly</span>
+          <span>Browse a wide variety of candidates </span>
         </h2>
         <Link className={`${styles.btn} ${styles.btnFind}`} href="/transfer">
-          Hire talent
+          Recruit
         </Link>
         <Image
           className={styles.ciForImg}
-          src={"/landing/hiring_visual.png"}
-          width={970}
-          height={400}
-        ></Image>
-        <Image
-          className={`${styles.ciForImg} ${styles.ciForImgMob}`}
-          src={"/landing/hiring_mobile.png"}
+          src={"/landing/hiring.jpg"}
           width={970}
           height={400}
         ></Image>
@@ -166,23 +153,17 @@ export default function Home() {
         </ul>
       </div>
       <div className={styles.ciFor}>
-        <p className={styles.ciForSubtitle}>Codeinterns for job search</p>
+        <p className={styles.ciForSubtitle}>Codeinterns for internship</p>
         <h2 className={styles.ciForTitle}>
-          <span>Find jobs that fit you.</span>
+          <span>Discover jobs that fit you.</span>
           <span> Globally & seamlessly</span>
         </h2>
         <Link className={`${styles.btn} ${styles.btnFind}`} href="/transfer">
-          Find a job
+          Find internship
         </Link>
         <Image
           className={styles.ciForImg}
-          src={"/landing/jobsearch_hiring.png"}
-          width={970}
-          height={400}
-        ></Image>
-        <Image
-          className={`${styles.ciForImg} ${styles.ciForImgMob}`}
-          src={"/landing/job_mobile.png"}
+          src={"/landing/main.jpg"}
           width={970}
           height={400}
         ></Image>
@@ -230,15 +211,18 @@ export default function Home() {
 
       <div className={styles.intro}>
         <h1>
-          Hire talent or find a job:<br></br>remotely & on your own
+          Find your first job in IT
         </h1>
-        <h3>Chat directly. See salaries in advance. Work without middlemen.</h3>
+        <h3>
+          For all ages and levels of proficiency. Direct access to companies
+          globally.
+        </h3>
         <div className={styles.introBtns}>
           <Link className={`${styles.btn} ${styles.btnHire}`} href="/transfer">
-            Hire talent
+            Recruit
           </Link>
           <Link className={`${styles.btn} ${styles.btnFind}`} href="/transfer">
-            Find a job
+            Find jobs
           </Link>
         </div>
       </div>
