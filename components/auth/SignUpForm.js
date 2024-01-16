@@ -1,6 +1,4 @@
-'use client'
-
-export default function SignUpForm({handleChange, handleSubmit, signUpData}) {
+export default function SignUpForm({handleChange, handleSubmit, signUpData, errorMessages}) {
     return(
         <div>
             <form onSubmit={handleSubmit} autoComplete="off">
@@ -14,6 +12,7 @@ export default function SignUpForm({handleChange, handleSubmit, signUpData}) {
                         placeholder='Email'
                         autoComplete="off"
                     />
+                    {errorMessages.email && <p>{errorMessages.email}</p>}
                 </div>
                 <div>
                     <input 
@@ -24,6 +23,7 @@ export default function SignUpForm({handleChange, handleSubmit, signUpData}) {
                         placeholder='Password'
                         autoComplete="off"
                     />
+                    {errorMessages.password && <p>{errorMessages.password}</p>}
                 </div>
                 <input
                     type="radio"
@@ -38,11 +38,13 @@ export default function SignUpForm({handleChange, handleSubmit, signUpData}) {
                     value="candidate"
                     onChange={handleChange}
                 />
+                {errorMessages.role && <p>{errorMessages.role}</p>}
                 <button 
                     type="submit" 
                 >
                     Create account
                 </button>
+                {errorMessages.other && <p>{errorMessages.other}</p>}
             </form>
         </div>
     )
