@@ -48,9 +48,9 @@ Code Interns is a job board designed for connecting interns with potential emplo
 | **HR Dashboard**             | Browse Candidates Feed        | ![Available](https://img.shields.io/badge/-Available-green)      |
 |                          | Search by Keywords            | ![Available](https://img.shields.io/badge/-Available-green)      |
 |                          | Filter Candidates             | ![Available](https://img.shields.io/badge/-Available-green)      |
-|                          | Browse a Candidate            | ![In Progress](https://img.shields.io/badge/-In%20Progress-blue)    |
-|                          | Save a Candidate              | ![In Progress](https://img.shields.io/badge/-In%20Progress-blue)    |
-|                          | Publish a Job                 | ![In Progress](https://img.shields.io/badge/-In%20Progress-blue)    |
+|                          | Browse a Candidate            | ![Planned](https://img.shields.io/badge/-Planned-yellow)    |
+|                          | Save a Candidate              | ![Planned](https://img.shields.io/badge/-Planned-yellow)    |
+|                          | Publish a Job                 | ![Planned](https://img.shields.io/badge/-Planned-yellow)    |
 |                          | Inbox                         | ![Later](https://img.shields.io/badge/-Later-lightgrey)          |
 |                          | Guides                        | ![Later](https://img.shields.io/badge/-Later-lightgrey)          |
 |                          | Edit Profile                  | ![Later](https://img.shields.io/badge/-Later-lightgrey)          |
