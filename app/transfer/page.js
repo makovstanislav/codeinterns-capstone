@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Image from "next/image";
-import styles from "../../styles/transfer.module.css";
+import styles from "./transfer.module.css";
 
 export default function Transfer() {
     const router = useRouter();

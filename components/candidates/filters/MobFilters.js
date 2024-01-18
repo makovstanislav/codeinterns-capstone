@@ -1,7 +1,7 @@
 'use client'
 import { useState } from "react"
 import { useRouter } from 'next/navigation'
-import styles from "../../../styles/candidates/filters.module.css"
+import styles from "./filters.module.css"
 
 export default function MobFiltersBtn({searchParams}) {
 

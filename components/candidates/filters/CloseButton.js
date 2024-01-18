@@ -1,4 +1,4 @@
-import styles from '../../../styles/candidates/filters.module.css'
+import styles from './filters.module.css'
 
 function CloseButton({ searchParams, queries }) {
 

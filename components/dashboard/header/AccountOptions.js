@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react'
 import Image from "next/image"
-import styles from "../../../styles/dashboard/header.module.css"
+import styles from "./header.module.css"
 
 export default function AccountOptions({ toggle, isOpen, setIsOpen }) {
     const ref = useRef(null);

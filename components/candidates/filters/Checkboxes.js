@@ -1,6 +1,6 @@
 'use client'
 import { useRouter } from 'next/navigation';  
-import styles from '../../../styles/candidates/filters.module.css';
+import styles from './filters.module.css';
 import { useState } from 'react';
 
 export default function Checkboxes({ searchParams }) {

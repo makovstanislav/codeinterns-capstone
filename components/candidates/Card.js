@@ -1,4 +1,4 @@
-import styles from '../../styles/candidates/card.module.css'
+import styles from './card.module.css'
 import Description from '../../components/candidates/Description'
 
 function Card({ description, english, experience, publishedDateStr, region, salary, skills, title, views}) {

@@ -1,4 +1,4 @@
-import styles from "../../styles/dashboard/footer.module.css";
+import styles from "./footer.module.css";
 import Image from "next/image";
 
 function Footer() {

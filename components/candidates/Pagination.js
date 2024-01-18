@@ -1,4 +1,4 @@
-import styles from '../../styles/candidates/pagination.module.css'
+import styles from './pagination.module.css'
 import { updatedQueryString } from '@/utils/updatedQueryString'
 
 export default function Pagination({ pages, searchParams }) {

@@ -1,5 +1,5 @@
 'use client'
-import styles from "../../../styles/dashboard/header.module.css"
+import styles from "./header.module.css"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 

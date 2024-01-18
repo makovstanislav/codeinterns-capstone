@@ -1,6 +1,6 @@
 'use client'
 import { useState, useEffect, useRef } from 'react';
-import styles from '../../styles/candidates/card.module.css';
+import styles from './card.module.css';
 
 export default function ReadMore({ description }) {
   const [isOpen, setIsOpen] = useState(false);

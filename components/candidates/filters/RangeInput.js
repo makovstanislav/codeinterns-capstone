@@ -1,5 +1,5 @@
 'use client'
-import styles from '../../../styles/candidates/filters.module.css'
+import styles from './filters.module.css'
 import { useState, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import Image from 'next/image'

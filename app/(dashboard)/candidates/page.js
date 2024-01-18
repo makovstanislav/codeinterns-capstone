@@ -1,4 +1,4 @@
-import styles from "../../../styles/candidates/candidates.module.css"
+import styles from "./candidates.module.css"
 import Card from "@/components/candidates/Card"
 import MobFilters from "@/components/candidates/filters/MobFilters"
 import Searchbar from "@/components/candidates/Searchbar"
