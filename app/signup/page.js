@@ -4,6 +4,8 @@ import { auth } from '../../firebaseClient'
 import { createUserWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, signOut } from "firebase/auth";
 import { useRouter } from "next/navigation"
 import SignUpForm from "@/components/auth/SignUpForm"
+import styles from './styles.module.css'
+import Header from "@/components/dashboard/header/Header";
 
 export default function SignUp() {
 
@@ -137,19 +139,26 @@ export default function SignUp() {
           });
     }
     
-    
     return(
         <div>
-            <h1>Test auth</h1>
-            <SignUpForm
-                handleChange={handleChange}
-                handleSubmit={handleSubmit}
-                signUpData={signUpData}
-                userExists={userExists}
-                errorMessages={errorMessages}
-            />
-            <button onClick={handleGoogle}>Sign In with Google</button>
-            <button onClick={signOutGoogle}>Sign Out of Google</button>
+            <main className={styles.main}>
+                <Header
+                    menus={false}
+                />
+                <div className={styles.container}>
+                    <h1 className={styles.title}>Sign Up</h1>
+                    <SignUpForm
+                        handleChange={handleChange}
+                        handleSubmit={handleSubmit}
+                        signUpData={signUpData}
+                        userExists={userExists}
+                        errorMessages={errorMessages}
+                    />
+                    <button onClick={handleGoogle}>Sign In with Google</button>
+                    <button onClick={signOutGoogle}>Sign Out of Google</button>
+                </div>
+                
+            </main>
         </div>
     )
 }

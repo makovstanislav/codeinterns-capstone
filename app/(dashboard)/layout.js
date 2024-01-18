@@ -6,7 +6,7 @@ import "../../app/globals.css"
 export default function DashboardLayout({ children }) {
   return(
     <div className={styles.layout}>
-      <Header/>
+      <Header menus={true}/>
       {children}
       <Footer/>
     </div>

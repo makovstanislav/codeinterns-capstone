@@ -1,3 +1,5 @@
+import styles from '../../app/signup/styles.module.css'
+
 export default function SignUpForm({handleChange, handleSubmit, signUpData, errorMessages}) {
     return(
         <div>
@@ -11,6 +13,7 @@ export default function SignUpForm({handleChange, handleSubmit, signUpData, erro
                         value={signUpData.email}
                         placeholder='Email'
                         autoComplete="off"
+                        className={styles.textField}
                     />
                     {errorMessages.email && <p>{errorMessages.email}</p>}
                 </div>
@@ -22,6 +25,7 @@ export default function SignUpForm({handleChange, handleSubmit, signUpData, erro
                         value={signUpData.password}
                         placeholder='Password'
                         autoComplete="off"
+                        className={styles.textField}
                     />
                     {errorMessages.password && <p>{errorMessages.password}</p>}
                 </div>
